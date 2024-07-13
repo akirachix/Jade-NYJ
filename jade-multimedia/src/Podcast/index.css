@@ -1,0 +1,211 @@
+.card{
+    width: 340px;
+    height: 380px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 40px;
+    
+    
+    }
+.main-container{
+border: #F3B708 3px solid;
+padding:40px ;
+border-radius: 40px;
+margin-top: 40px;
+margin-right:50px ;
+margin-left: 50px;
+
+
+    }
+    .card:hover{
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+cursor: pointer;
+
+
+    }
+    .content-container{
+    padding: 10px;
+    
+    }
+    .cards-container{
+       display: flex; 
+       gap: 50px;
+       justify-content: space-evenly;
+    }
+    img{
+    width: 350;
+    height: 350px;
+    margin-top: 50px;
+    }
+    
+    button{
+    background-color: #F3B708;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 820px;
+    margin-top: 20px;
+    
+    
+    }
+    
+    
+.second-container{
+display: flex;
+justify-content: space-evenly;
+    }
+    .Container{
+flex-direction: column;
+
+
+    }
+img{
+  width: 130px; 
+  height: 130px;
+  object-fit: cover; 
+}
+
+
+@media screen and (min-width: 200px) and (max-width:300px){
+    .card{
+        width: 250px;
+        height: 350px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin-top: 80px;
+        font-size: 12px;
+        
+        
+        }
+        .card:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    
+    
+        }
+        .content-container{
+        padding: 10px;
+        
+        }
+        .cards-container{
+           display: block; 
+           gap: 50px;
+           justify-content: space-evenly;
+        }
+        img{
+        width: 250;
+        height: 350px;
+        margin-top: 50px;
+        }
+        
+        button{
+        background-color: #F3B708;
+        color: white;
+        font-weight: bold;
+        font-size: large;
+        border: none;
+        width: 200px;
+        height: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-left: 820px;
+        margin-top: 20px;
+        
+        
+        }
+        
+        
+    .second-container{
+        display: block; 
+        gap: 50px;
+        justify-content: space-evenly;
+        }
+        .Container{
+    flex-direction: column;
+    
+    
+        }
+    img{
+      width: 150px; 
+      height: 150px;
+      object-fit: cover; 
+    }
+    
+
+
+}
+@media screen and (min-width: 300px) and (max-width:3px){
+    .card{
+        width: 350px;
+        height: 400px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin-top: 80px;
+        
+        
+        }
+        .card:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    
+    
+        }
+        .content-container{
+        padding: 10px;
+        
+        }
+        .cards-container{
+           display: flex; 
+           gap: 50px;
+           justify-content: space-evenly;
+           
+        }
+        img{
+        width: 350;
+        height: 350px;
+        margin-top: 50px;
+        }
+        
+        button{
+        background-color: #F3B708;
+        color: white;
+        font-weight: bold;
+        font-size: large;
+        border: none;
+        width: 200px;
+        height: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-left: 820px;
+        margin-top: 20px;
+        
+        
+        }
+        
+        
+    .second-container{
+    display:block;
+    justify-content: space-evenly;
+        }
+        .Container{
+    flex-direction: column;
+    
+    
+        }
+    img{
+      width: 150px; 
+      height: 150px;
+      object-fit: cover; 
+    }
+    
+
+
+}
