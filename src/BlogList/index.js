@@ -2,9 +2,23 @@ import React, { useState } from 'react';
 import BlogPost from '../Post/index.js'; 
 import './index.css';
 import bornacrime from '../images/bornacrime.png';
+import casestudy from '../images/casestudy.png';
+import PageOne from '../PageOne/index.js';
 
 
 const posts = [
+  {
+    title: 'Case Study and Farmer',
+    component: <PageOne />
+  },
+  {
+    title: 'The Impact of Born a Crime',
+    image: bornacrime,
+    content: `Born a Crime by Trevor Noah is a powerful memoir that explores themes of racism, identity struggles,
+     and resilience. It provides a compelling narrative of Noah's life growing up in South Africa during and after apartheid. 
+     The memoir delves into his experiences as a mixed-race child, born to a black Xhosa mother and a white Swiss father, which was a union considered illegal under apartheid laws. Noah's storytelling highlights the
+     systemic racism and discrimination that shaped his upbringing, as well as the societal challenges he faced in navigating his dual identity`
+  },
   {
     title: 'Born A Crime',
     image: bornacrime,
@@ -60,14 +74,25 @@ const BlogList = () => {
     setCurrentPostIndex((prevIndex) => (prevIndex - 1 + posts.length) % posts.length);
   };
 
-  return (
+  const currentPost = posts[currentPostIndex];
 
+  return (
     <div className="blog-list">
-      <BlogPost
-        post={posts[currentPostIndex]}
-        onNext={currentPostIndex < posts.length - 1 ? handleNext : null}
-        onBack={currentPostIndex > 0 ? handleBack : null}
-      />
+      {currentPost.component ? (
+        <div className="blog-post">
+          {currentPost.component}
+          <div className="navigation">
+            {currentPostIndex > 0 && <button onClick={handleBack}>Back</button>}
+            {currentPostIndex < posts.length - 1 && <button onClick={handleNext}>Next</button>}
+          </div>
+        </div>
+      ) : (
+        <BlogPost
+          post={currentPost}
+          onNext={currentPostIndex < posts.length - 1 ? handleNext : null}
+          onBack={currentPostIndex > 0 ? handleBack : null}
+        />
+      )}
     </div>
   );
 };
