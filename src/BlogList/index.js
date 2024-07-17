@@ -6,15 +6,15 @@ import crime from '../images/crime.jpeg'
 
 import born from '../images/born.jpeg'
 import PageOne from '../PageOne/index.js';
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
 
-<div className='nav-links'>
+{/* <div className='nav-links'>
     <a className='nav-item'><Link to="Home" smooth={true} duration={500}>Home</Link></a>
     <a className='nav-item'><Link to="Blog" smooth={true} duration={500}>Blog</Link></a>
     <a className='nav-item'><Link to="Portfolio" smooth={true} duration={500}>Portfolio</Link></a>
     <a className='nav-item'><Link to="Podcast" smooth={true} duration={500}>Podcast</Link></a>
     <a className='nav-item'><Link to="Video" smooth={true} duration={500}>Video</Link></a>
-      </div>
+      </div> */}
 
 
 

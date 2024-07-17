@@ -3,7 +3,9 @@
   justify-content: center;
   align-items: center;
   background-color: #333; 
-  padding: 10px; 
+  /* padding: 0px;  */
+  width: 150px;
+  margin-left: -30px;
 }
 
 .nav-item {
@@ -20,4 +22,29 @@
 .nav-item a:hover {
   background-color: #555; 
   border-radius: 4px; 
+}
+@media screen and (min-width:0px) and (max-width:300px){
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; 
+    /* padding: 0px;  */
+    width: 200px;
+    margin-left: -30px;
+  }
+
+}
+@media screen and (min-width:301px) and (max-width:400px){
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; 
+    /* padding: 0px;  */
+    /* width: 300%; */
+    max-width: 400px;
+    margin-left: 50px;
+  }
+
 }
