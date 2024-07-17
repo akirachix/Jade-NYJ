@@ -3,7 +3,7 @@ import BlogPost from '../Post/index.js';
 import './index.css';
 import trevor from '../images/trevor.jpeg'
 import crime from '../images/crime.jpeg'
-// import bornacrime from '../images/bornacrime.png';
+
 import born from '../images/born.jpeg'
 import PageOne from '../PageOne/index.js';
 import { Link } from 'react-scroll';
