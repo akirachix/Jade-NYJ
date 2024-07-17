@@ -6,6 +6,7 @@ import casestudy from '../images/casestudy.png';
 import PageOne from '../PageOne/index.js';
 
 
+
 const posts = [
   {
     title: 'Case Study and Farmer',
@@ -20,6 +21,7 @@ const posts = [
      systemic racism and discrimination that shaped his upbringing, as well as the societal challenges he faced in navigating his dual identity`
   },
   {
+
     title: 'Born A Crime',
     image: bornacrime,
     content: `Born a Crime by Trevor Noah remains relevant today as it highlights the impact of racism, 
@@ -74,10 +76,15 @@ const BlogList = () => {
     setCurrentPostIndex((prevIndex) => (prevIndex - 1 + posts.length) % posts.length);
   };
 
+
   const currentPost = posts[currentPostIndex];
 
+
+
   return (
+
     <div className="blog-list">
+
       {currentPost.component ? (
         <div className="blog-post">
           {currentPost.component}
@@ -93,6 +100,12 @@ const BlogList = () => {
           onBack={currentPostIndex > 0 ? handleBack : null}
         />
       )}
+      <BlogPost
+        post={posts[currentPostIndex]}
+        onNext={currentPostIndex < posts.length - 1 ? handleNext : null}
+        onBack={currentPostIndex > 0 ? handleBack : null}
+      />
+
     </div>
   );
 };
